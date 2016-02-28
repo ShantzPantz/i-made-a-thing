@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Special+Elite);
+
+$background: #000 url("../images/wood.jpg") repeat;
+
+$background-repeat: repeat;
+$card-background: #fff url("../images/handmadepaper.png") repeat;
+
+$color-accent: #333366;
+$color-base: #777777;
+$color-text: #111111;
+
+$quote-font: 'Special Elite', cursive;
+$quote-font-size: 18px;
+$base-font: Arial, Helvetica, sans-serif;
+
+$card-padding: 10px;
+$card-width: 350px;
+$card-height: 200px;
+
+body {
+    background: $background;
+    font-family: $base-font;
+    color: $color-text;
+}
+
+a {
+    text-decoration: none;
+    color: $color-accent;
+}
+
+
+nav {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 200px;
+    text-align: center;
+    
+    .button-action {
+        border: $color-accent 3px solid;
+        border-radius: 2px;
+        font-weight: bold;
+        font-size: 22px;
+        padding: 10px 30px;
+    }
+}   
+
+.card {  
+    font-family: $quote-font;  
+    position: relative;
+    margin: auto;
+    
+    background: $card-background;
+    width: auto;
+    min-width: 350px;
+    height: auto;
+    max-width: 600px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    
+    .card-header {
+        height: 20px;
+        background-color: $color-accent;
+        margin: 0px;
+        padding: 10px;
+        
+        .category {
+            
+        }
+    }
+    
+    .card-body {
+        padding: 20px 20px 40px 20px;
+     
+        .quote {
+            text-align: center;
+            font-size: $quote-font-size;
+        }
+    }
+    
+    .card-footer {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        height: 14px;
+        padding: 10px;
+        
+        .author {
+            float: right;
+            
+        }
+    }
+}
+
+.animate {
+    animation-duration: 1.5s;
+    animation-name: slidein;
+    animation-timing-function: cubic-bezier(0,0,0,1);
+}
+
+
+
+@keyframes slidein {
+  from {
+    margin-left: -$card-width;
+    margin-top: 0px; 
+    -webkit-transform: rotate(26deg);
+  }
+
+  to {
+    margin-left: 400px;
+    margin-top: 200px;
+    -webkit-transform: rotate(-15deg);
+  }
+}
+

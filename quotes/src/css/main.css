@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Special+Elite);
+body {
+  background: #000 url("../images/wood.jpg") repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111111; }
+
+a {
+  text-decoration: none;
+  color: #333366; }
+
+nav {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  height: 200px;
+  text-align: center; }
+  nav .button-action {
+    border: #333366 3px solid;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px 30px; }
+
+.card {
+  font-family: "Special Elite", cursive;
+  position: relative;
+  margin: auto;
+  background: #fff url("../images/handmadepaper.png") repeat;
+  width: auto;
+  min-width: 350px;
+  height: auto;
+  max-width: 600px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  .card .card-header {
+    height: 20px;
+    background-color: #333366;
+    margin: 0px;
+    padding: 10px; }
+  .card .card-body {
+    padding: 20px 20px 40px 20px; }
+    .card .card-body .quote {
+      text-align: center;
+      font-size: 18px; }
+  .card .card-footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 14px;
+    padding: 10px; }
+    .card .card-footer .author {
+      float: right; }
+
+.animate {
+  animation-duration: 1.5s;
+  animation-name: slidein;
+  animation-timing-function: cubic-bezier(0, 0, 0, 1); }
+
+@keyframes slidein {
+  from {
+    margin-left: -350px;
+    margin-top: 0px;
+    -webkit-transform: rotate(26deg); }
+  to {
+    margin-left: 400px;
+    margin-top: 200px;
+    -webkit-transform: rotate(-15deg); } }
+
+/*# sourceMappingURL=main.css.map */
