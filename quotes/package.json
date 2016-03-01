@@ -1,0 +1,20 @@
+{
+  "name": "quotes",
+  "version": "0.0.1",
+  "description": "Simple random quote app. Emphasis on learning some new front-end tools.",
+  "main": "main.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brian Shantz",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
+    "jquery": "^2.2.1",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  }
+}

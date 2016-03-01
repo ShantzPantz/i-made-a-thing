@@ -1,3 +1,7 @@
+var React = require('react');
+var ReactDOM = require('react-dom');
+var $ = require('jquery');
+
 var Quote = React.createClass({
     componentDidMount: function() {
         //console.log("Mounting");
@@ -58,7 +62,8 @@ var App = React.createClass({
                 <nav>
                     <a className="button-action" href="#" onClick={this.getRandomQuote}>New Quote</a>
                 </nav>
-                {quotes}               
+                 {quotes}
+                     
             </div>
         );
     } 

@@ -1,0 +1,1 @@
+browserify -t [ babelify --presets [ react ] ] main.jsx -o bundle.js
